@@ -1,4 +1,4 @@
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
-playground/xcuserdata
+*.playground/xcuserdata
