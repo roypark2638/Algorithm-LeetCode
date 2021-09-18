@@ -2,6 +2,7 @@
 
 |  #  | Title  | Solution | Basic Idea |
 | --- | ------------- | -------- | ------------ |
+|  131  | [Invert Binary Tree](https://www.algoexpert.io/questions/Invert%20Binary%20Tree)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/InvertBinaryTree.py) | 1. Breath First Search (Iterative Solution) Time O(n) Space O(n)<br/> 2. Recursive Solution <br/> - Time O(n) where n is the number of the nodes in the tree<br/> - Space O(d) where d is the depth of the tree.
 |  130  | [Min Height BST](https://www.algoexpert.io/questions/Min%20Height%20BST)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/MinHeightBST.py) | Either write a function by using given insert method -> Time O(nlogn) Space O(n)<br/> Or write a function manually constrcuting the min height bst with given sorted array consisting of distinct integers -> Time O(n) Space O(n).
 |  129  | [BST Traversal](https://www.algoexpert.io/questions/BST%20Traversal)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/BSTTraversal.py) | Use recursion to create inOrderTraverse, preOrderTraverse, and postOrderTraverse. Time O(n) and Space O(n) where n is the number of the nodes in the BST.
 |  128  | [Validate BST](https://www.algoexpert.io/questions/Validate%20BST)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/ValidateBST.py) | Use recursion, divide and conquer algorithm. Find out if each subtree is valid BST. Time O(n) and Space O(d) where n is the number of the nodes and d is the depth of the tree.
