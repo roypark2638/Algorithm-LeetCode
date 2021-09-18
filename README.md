@@ -2,6 +2,7 @@
 
 |  #  | Title  | Solution | Basic Idea |
 | --- | ------------- | -------- | ------------ |
+|  130  | [Min Height BST](https://www.algoexpert.io/questions/Min%20Height%20BST)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/MinHeightBST.py) | Either write a function by using given insert method -> Time O(nlogn) Space O(n)<br/> Or write a function manually constrcuting the min height bst with given sorted array consisting of distinct integers -> Time O(n) Space O(n).
 |  129  | [BST Traversal](https://www.algoexpert.io/questions/BST%20Traversal)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/BSTTraversal.py) | Use recursion to create inOrderTraverse, preOrderTraverse, and postOrderTraverse. Time O(n) and Space O(n) where n is the number of the nodes in the BST.
 |  128  | [Validate BST](https://www.algoexpert.io/questions/Validate%20BST)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/ValidateBST.py) | Use recursion, divide and conquer algorithm. Find out if each subtree is valid BST. Time O(n) and Space O(d) where n is the number of the nodes and d is the depth of the tree.
 |  127  | [BST Construction](https://www.algoexpert.io/questions/BST%20Construction)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/BSTContruction.py) | insert, contains, and remove methods
