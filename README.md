@@ -2,6 +2,7 @@
 
 |  #  | Title  | Solution | Basic Idea |
 | --- | ------------- | -------- | ------------ |
+|  144  | [First Non-Repeating Character](https://www.algoexpert.io/questions/First%20Non-Repeating%20Character)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/FirstNon-RepeatingCharacter.py) | - Create a frequency table for each char in string.<br/> - And iterate string index and compare to the frequency table.<br/> - If the frequency value is equal to 1, return the current index.<br/> Time O(n) Space O(1). Space is constant because lowercase English alphabet letters are constant.
 |  143  | [Selection Sort](https://www.algoexpert.io/questions/Selection%20Sort)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/SelectionSort.py) | - Divide into two sections into sorted and unsorted. <br/> - Find the smallestIndex and at the end of each iteration, swap the value to the left. <br/>Time O(n^2) Space O(1)
 |  142  | [Insertion Sort](https://www.algoexpert.io/questions/Insertion%20Sort)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/InsertionSort.py) | Time O(n^2) Space O(1)
 |  141  | [Bubble Sort](https://www.algoexpert.io/questions/Bubble%20Sort)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/BubbleSort.py) | - i, j pointer moves together until j < len(array) - i<br/> - Check if there is a change happended each loop, if not, break and return.<br/> Time O(n^2) Space O(1).
