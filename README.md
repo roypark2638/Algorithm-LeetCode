@@ -2,6 +2,7 @@
 
 |  #  | Title  | Solution | Basic Idea |
 | --- | ------------- | -------- | ------------ |
+|  143  | [Selection Sort](https://www.algoexpert.io/questions/Selection%20Sort)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/SelectionSort.py) | - Divide into two sections into sorted and unsorted. <br/> - Find the smallestIndex and at the end of each iteration, swap the value to the left. <br/>Time O(n^2) Space O(1)
 |  142  | [Insertion Sort](https://www.algoexpert.io/questions/Insertion%20Sort)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/InsertionSort.py) | Time O(n^2) Space O(1)
 |  141  | [Bubble Sort](https://www.algoexpert.io/questions/Bubble%20Sort)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/BubbleSort.py) | - i, j pointer moves together until j < len(array) - i<br/> - Check if there is a change happended each loop, if not, break and return.<br/> Time O(n^2) Space O(1).
 |  140  | [Youngest Common Ancestor](https://www.algoexpert.io/questions/Youngest%20Common%20Ancestor)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/YoungestCommonAncestor.py) | - Given two descendatns have different level in the tree<br/> - In order to find the common ancestor, we need to make those two decendants at the same level.<br/> - Calculate both of depth in the tree and move lower decendant to the same level of higher decendant.<br/> - Now, two decendants are at the same level.<br/> - Move both of decendants until they are pointing to the same node.
