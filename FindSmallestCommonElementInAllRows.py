@@ -29,7 +29,7 @@ def foo1(mat):
     return -1
 
 
-def createFrequencyTable(`row, dic):
+def createFrequencyTable(row, dic):
     for n in row:
         if n in dic:
             dic[n] += 1
