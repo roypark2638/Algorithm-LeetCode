@@ -2,6 +2,7 @@
 
 |  #  | Title  | Solution | Basic Idea |
 | --- | ------------- | -------- | ------------ |
+|  149  | [Task Assignment](https://www.algoexpert.io/questions/Task%20Assignment)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/TaskAssignment.py) | - Create a dictionary with an array as a value holding indicies.<br/> - Sort the given tasks and iterate k times<br/> Time O(nlogn) Space O(n)
 |  148  | [Minimum Passes Of Matrix](https://www.algoexpert.io/questions/Minimum%20Passes%20Of%20Matrix)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/MinimumPassesOfMatrix.py) | - Find positive value index<br/> - From that index, find and update neighbors where has negative values. <br/> - Keep those updated neighbors for the next queue to update.<br/> Time O(w * h) SpaceO(w * h)
 |  147  | [Disk Stacking](https://www.algoexpert.io/questions/Disk%20Stacking)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/DiskStacking.py) | Dyanmic Programming Time O(n^2) Space O(n)<br/> - Sort the disks by height and keep track of the tallest heights on each index<br/> - Use two for-in loop to find stackable disks and store the heights and sequences.
 |  146  | [Reverse Linked List](https://www.algoexpert.io/questions/Reverse%20Linked%20List)  | [Python](https://github.com/roypark2638/Algorithm-Leetcode/blob/main/ReverseLinkedList.py) | - Create 3 pointers. prev, curr, and next. <br/> Time O(n) Space O(1)
