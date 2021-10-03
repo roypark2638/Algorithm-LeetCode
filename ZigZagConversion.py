@@ -56,4 +56,33 @@ def convert(s, numRows):
     return res
 
 
+# Create an empty string array with the number of rows and read each char in s and append to corresponding index.
+def convert2(s, numRows):
+    if numRows <= 1:
+        return s
+
+    L = [''] * numRows
+    '''
+    L = [''] * numRows are same as
+    L = []
+    for row in range(numRows):
+        L.append('')
+    So if numRows = 3, L = ['', '', '']
+    '''
+
+    index, step = 0, 1
+    count = 0
+    while count < len(s):
+        L[index] += s[count]
+
+        if index == 0:
+            step = 1
+        elif index == numRows-1:
+            step = -1
+
+        index += step
+        count += 1
+    return "".join(L)
+
+
 print(convert(s, numRows))
