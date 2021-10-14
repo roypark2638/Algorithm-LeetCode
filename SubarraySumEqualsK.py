@@ -21,32 +21,36 @@ Constraints:
 
 class Solution(object):
     '''
-    Hashmap
+    1. Bruth Force: Time O(n^2) Space O(1)
+    - Use two loops to iterate the array and calculate currentSum.
+    - If the currentSum is eqaul to the targetSum, increment the count.
+    - Return the count
 
-    initial variable
-    - count, sumCount{}, runningSum
+    2. Memoization of path sum: Time O(n) Space O(n)
 
-    init sumCount[0] = 1 the reason is
+    - In order to optimze from the bruth force solution, we will have to think of a clear way to memoize the intermediate result. Namely in the brutal force solution, we did a lot of repeated calculation. For example [1,3,5]: 1, 1+3, 1+3+5, 3, 3+5, 5.
+    - This is a classical "space and time tradeoff": we can create a dictionary, cache which saves all the pathSum (from root to current node) and their frequency.
+    - Again, we traverse through the tree, at each node, we can get the currPathSum (from root to current node). If within this path, there is a valid solution, then there must be a oldPathSum such that currPathSum - oldPathSum = target
+    - We just need to add the frequency of the oldPathSum in the dictionary to the result.
 
-    - Keep track of the runningSum and we will check whether
-    runningSum - target exist in our frequency of sumCount hashmap
-    If that diff exists in the hashmap, then we will add the number of occurance to our count variable.
-    - Keep building sumCount frequency hashmap.
-    return count
     Time O(n) Space O(n)
     '''
 
-    def subarraySum(self, nums, k):
-        count = 0
-        sumCount = {}
-        runningSum = 0
-        sumCount[0] = 1
-        for i in range(len(nums)):
-            runningSum += nums[i]
-            if runningSum-k in sumCount:
-                count += sumCount[runningSum-k]
-            if runningSum in sumCount:
-                sumCount[runningSum] += 1
-            else:
-                sumCount[runningSum] = 1
-        return count
+
+nums = [1, 1, 1]
+k = 2
+
+
+def subarraySum(nums, k):
+    count = 0
+    cache = {0: 1}
+    currPathSum = 0
+    for i in range(len(nums)):
+        currPathSum += nums[i]
+        oldPathSum = currPathSum - k
+        count += cache.get(oldPathSum, 0)
+        cache[currPathSum] = cache.get(currPathSum, 0) + 1
+    return count
+
+
+print(subarraySum(nums, k))
