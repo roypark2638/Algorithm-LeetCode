@@ -67,9 +67,9 @@ class Solution(object):
     Bruth Force Solution Time O(nlogn) ~ O(n^2)
     High level walkthrough
     1. create global variable, count
-    2. 1st DFS layer
-    3. 2nd DFS layer
-    4. return
+    2. 1st DFS layer, use recursive traverse to go through each node (can be any order)
+    3. 2nd DFS layer, for each node, walk all paths. If a path sum eqauls to the target: self.count += 1
+    4. return the count
     '''
 #     counter = 0
 #     def pathSum(self, root, targetSum):
