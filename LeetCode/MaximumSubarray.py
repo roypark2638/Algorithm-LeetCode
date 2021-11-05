@@ -1,5 +1,18 @@
 '''
 Divide and Conquer from CLRS
+
+The greatest sum over all subarrays must be in these three options
+- A[low .. mid]
+- A[mid+1 .. high]
+- crossing the midpoint
+
+We can find maximum subarrays on the A[low .. mid] and A[mid+1 .. high] recursively because these two subproblems are smaller instances of the problem of finding a maximum subarray. Now, find maximum subarray in crossing mid point and take a subarray with the largest sum of the three.
+
+Find maximum subarray corssing the midpoint
+: This problem is not a smaller instance of our original problem because it has the added restriction that the subarray it chooses must cross the midpoint. Any subarray crossing the midpoint is titself made of two subarrays A[i .. mid] and A[mid+1 .. high]. Therefore, we just need to find maximum subarrays of the form A[i .. mid] and A[mid+1 .. j] and then combine them.
+
+Analysing Running Time
+: the recursive call for finding maximum subarrays in A[low .. mid] and A[mid+1 .. high] takes 2T(n/2) and finding crossing subarray takes O(n) time. 2T(n/2) + O(n) = O(nlogn)
 '''
 
 A = [1, 5, -3, -5, 10, 1, 5, -7]
